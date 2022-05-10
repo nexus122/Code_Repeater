@@ -15,18 +15,27 @@
 <body>
     <main class="container">
         <h1>Code Repeater</h1>
-        <p>Repite una instruccion de codigo cambiando el numerito, sirve para los ejercicios de Java que estamos haciendo, ahorra tiempo a la hora de generar 51 funciones 🤣</p>
-        <p> Escribe la linea que quieres repetir y cambia el numero por una x, el programa se encargara solo de hacer la iteración</p>
-        <div class="card text-white bg-dark mb-3">
-            <div class="card-header">Code Repeater</div>
-            <div class="card-body">                
+        <p>Repite una instruccion de codigo cambiando el numerito, sirve para los ejercicios de Java que estamos
+            haciendo, ahorra tiempo a la hora de generar 51 funciones 🤣</p>
+        <p> Escribe la linea que quieres repetir y cambia el numero por una x, el programa se encargara solo de hacer la
+            iteración</p>
+
+        <p>Ejemplo: tienes que hacer 50 <b>funciones llamadas saludar()</b>, escribes <b>saludarx()</b> y pones 50 en el
+            input de iteraciónes.</p>
+
+        <div class="card text-white bg-dark mb-3">            
+            <div class="card-body">
                 <!-- Frase -->
-                <div class="input-group">                    
-                    <input type="text" name="phrase" id="phrase" class="form-control" placeholder="Escribe la frase que quieres que se repita.">
+                <div class="form-group">
+                    <label for="phrase">Escribe el trozo de texto que quieres repetir.</label>
+                    <input type="text" name="phrase" id="phrase" class="form-control"
+                        placeholder="Ejemplo: public static void px(){};">
                 </div>
-                 <!-- Cantidad -->
-                 <div class="input-group">                    
-                    <input value="10" type="number" name="number" id="number" class="form-control" placeholder="Escribe la cantidad de vueltas.">
+                <!-- Cantidad -->
+                <div class="form-group">
+                    <label for="phrase">Escribe el numero de funciones que necesitas.</label>
+                    <input value="10" type="number" name="number" id="number" class="form-control"
+                        placeholder="Escribe la cantidad de vueltas.">
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <button id="enviar" class="btn btn-primary">Generar Texto</button>
@@ -36,9 +45,10 @@
 
         <h1>Resultado</h1>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+            <label for="exampleFormControlTextarea1">Copia este codigo y disfruta.</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <button class="btn btn-primary" id="copy" >Copiar el codigo</button>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -22,3 +22,10 @@ btn.addEventListener('click', function(){
 
     document.querySelector("textarea").value = code;
 })
+
+// Copiar y pegar
+document.querySelector("#copy").addEventListener('click',function(){
+    var content = document.querySelector("textarea");    
+    content.select();
+    document.execCommand('copy');  
+})
