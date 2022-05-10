@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Repeater</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Code Repeater</h1>
+        <p>Repite una instruccion de codigo cambiando el numerito, sirve para los ejercicios de Java que estamos haciendo, ahorra tiempo a la hora de generar 51 funciones 🤣</p>
+        <div class="card text-white bg-dark mb-3">
+            <div class="card-header">Code Repeater</div>
+            <div class="card-body">                
+                <!-- Frase -->
+                <div class="input-group">                    
+                    <input type="text" name="phrase" id="phrase" class="form-control" placeholder="Escribe la frase que quieres que se repita.">
+                </div>
+                 <!-- Cantidad -->
+                 <div class="input-group">                    
+                    <input value="10" type="number" name="number" id="number" class="form-control" placeholder="Escribe la cantidad de vueltas.">
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button id="enviar" class="btn btn-primary">Generar Texto</button>
+                </div>
+            </div>
+        </div>
+
+        <h1>Resultado</h1>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
