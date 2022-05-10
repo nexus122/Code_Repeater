@@ -20,12 +20,12 @@ btn.addEventListener('click', function(){
         code += eval(phrase)+'\n';
     }
 
-    document.querySelector("textarea").value = code;
+    document.querySelector("#resultado").value = code;
 })
 
 // Copiar y pegar
 document.querySelector("#copy").addEventListener('click',function(){
-    var content = document.querySelector("textarea");    
+    var content = document.querySelector("#resultado");    
     content.select();
     document.execCommand('copy');  
 })
