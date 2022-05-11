@@ -1,5 +1,6 @@
 let phraseInput = document.getElementById('phrase');
 let iterations = document.getElementById('number');
+let initIterations = document.getElementById('init');
 let btn = document.getElementById('enviar');
 
 phraseInput.addEventListener('change', function(e){
@@ -9,13 +10,12 @@ phraseInput.addEventListener('change', function(e){
 
 btn.addEventListener('click', function(){
     let phrase = phraseInput.value;
-    phrase = phrase.replaceAll('x', '${i}');
-    console.log(phrase);
+    phrase = phrase.replaceAll('x', '${i}');            
 
     let code = "";
     console.log(phrase);
 
-    for(var b = 0; b < iterations.value; b++){
+    for(var b = initIterations.value; b < iterations.value; b++){
         let i = b +1;        
         code += eval(phrase)+'\n';
     }
