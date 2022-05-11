@@ -14,7 +14,7 @@
 
 <body>
     <main class="container">
-        <h1>Code Repeater</h1>
+        <h1>🔄 Code Repeater</h1>
         <p>Repite una instruccion de codigo cambiando el numerito, sirve para los ejercicios de Java que estamos
             haciendo, ahorra tiempo a la hora de generar 51 funciones 🤣</p>
         <p> Escribe la linea que quieres repetir y cambia el numero por una x, el programa se encargara solo de hacer la
@@ -32,28 +32,26 @@
                         placeholder="Ejemplo: public static void px(){};" rows="2"></textarea>
                 </div>
                 <!-- Cantidad -->
-                <div class="form-row">
+                <div class="form-row row">
                     <p>iteraciónes, por donde empiezas y donde acabas</p>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col col-md">
                         <label for="init">Inicio</label>
                         <input type="number" class="form-control" id="init" placeholder="Empiezas por:" value="1">
                       </div>        
-                    <div class="form-group col-md-4">
+                    <div class="form-group col col-md">
                       <label for="number">Fin</label>
                       <input type="number" class="form-control" id="number" placeholder="Acaba en:" value="10">
                     </div>        
-                  </div>
-
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button id="enviar" class="btn btn-primary">Generar Texto</button>
                 </div>
+                
+                <button id="enviar" class="btn btn-primary mt-2">Generar Texto</button>                
             </div>
         </div>
 
         <h1>Resultado</h1>
+        <hr>
         <div class="form-group">
-            <label for="resultado">Copia este codigo y disfruta.</label>
-            <textarea class="form-control" id="resultado" rows="10"></textarea>
+            <textarea class="form-control" id="resultado" rows="10" placeholder="Aqui aparecera tu respuesta: "></textarea>
         </div>
         <button class="btn btn-primary" id="copy" >Copiar el codigo</button>
     </main>

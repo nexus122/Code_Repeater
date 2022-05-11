@@ -1,7 +1,7 @@
-let phraseInput = document.getElementById('phrase');
-let iterations = document.getElementById('number');
-let initIterations = document.getElementById('init');
-let btn = document.getElementById('enviar');
+let phraseInput = document.querySelector('#phrase');
+let iterations = document.querySelector('#number');
+let initIterations = document.querySelector('#init');
+let btn = document.querySelector('#enviar');
 
 phraseInput.addEventListener('change', function(e){
     phraseInput.value = phraseInput.value.replaceAll('`', '');
@@ -12,10 +12,16 @@ btn.addEventListener('click', function(){
     let phrase = phraseInput.value;
     phrase = phrase.replaceAll('x', '${i}');            
 
-    let code = "";
-    console.log(phrase);
+    let inicio = initIterations.value;
+    let iteraciones = iterations.value;
 
-    for(var b = initIterations.value; b < iterations.value; b++){
+    console.log(phrase);
+    console.log(inicio);
+    console.log(iteraciones);
+
+    let code = "";    
+    for(var b = parseInt(inicio-1); b < iterations.value; b++){
+        console.log("Entramos al bucle")
         let i = b +1;        
         code += eval(phrase)+'\n';
     }
