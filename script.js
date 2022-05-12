@@ -10,7 +10,7 @@ phraseInput.addEventListener('change', function(e){
 
 btn.addEventListener('click', function(){
     let phrase = phraseInput.value;
-    phrase = phrase.replaceAll('x', '${i}');            
+    phrase = phrase.replaceAll('x', '${b}');            
 
     let inicio = initIterations.value;
     let iteraciones = iterations.value;
