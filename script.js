@@ -20,9 +20,8 @@ btn.addEventListener('click', function(){
     console.log(iteraciones);
 
     let code = "";    
-    for(var b = parseInt(inicio-1); b < iterations.value; b++){
-        console.log("Entramos al bucle")
-        let i = b +1;        
+    for(var b = parseInt(inicio); b < iterations.value; b++){
+        console.log(`Entramos al bucle ${i} el elemento a dibujar es ${phrase}`);        
         code += eval(phrase)+'\n';
     }
 
